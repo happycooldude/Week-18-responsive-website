@@ -1,7 +1,48 @@
+/* font-family: 'Archivo', sans-serif; */
 html{
-    size: 65%;
+  font-size: 62.5%;
+  background-color: gray;
 }
 
-p{
-    font-size: 1em;
+#top-block{
+    width: 100%;
+    background-color: yellow;
+    height: 8em;
+}
+
+.fas.fa-bars{
+    color: white;
+    font-size: 4em;
+    padding: .5rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+#dropdown-contact{
+    display: inline-block;
+}
+
+#logo-block{
+    width: 100%;
+    background-color: white;
+    height: 8em;
+}
+
+.fas.fa-bars{
+    color: black;
+    font-size: 4em;
+    padding: .5rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+#logo-info{
+    display: inline-block;
+}
+
+#logo{
+    float: right;
+}
+#logoimg{
+    height: 8rem;
 }
