@@ -1,7 +1,16 @@
-/* font-family: 'Archivo', sans-serif; */
+
 html{
   font-size: 62.5%;
-  background-color: gray;
+}
+
+h1{
+font-family: 'Archivo', sans-serif;
+font-size:5vw;
+}
+
+p{
+font-family: 'Archivo', sans-serif;
+font-size:3vw;
 }
 
 #top-block{
@@ -10,17 +19,50 @@ html{
     height: 8em;
 }
 
-.fas.fa-bars{
+.fas.fa-bars {
     color: white;
-    font-size: 4em;
     padding: .5rem;
+    font-size: 6em;
     margin-left: 2rem;
-    margin-top: 1.5rem;
-}
-
-#dropdown-contact{
+    margin-top: .5rem;
+    border: none;
+    cursor: pointer;
+  }
+  .fas.fa-bars.bottom{
+    color: black;
+  }
+ 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
     display: inline-block;
-}
+  }
+
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
 #logo-block{
     width: 100%;
@@ -28,21 +70,112 @@ html{
     height: 8em;
 }
 
-.fas.fa-bars{
-    color: black;
-    font-size: 4em;
-    padding: .5rem;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
-}
-
 #logo-info{
     display: inline-block;
 }
 
-#logo{
-    float: right;
-}
 #logoimg{
-    height: 8rem;
+  float: right;
+  width: 60%;
+  margin: .5em .5em .5em 0em;
+}
+
+.header{
+  width: 100%;
+}
+
+.headerimg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.proefles{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.fas.fa-car{
+  float: left;
+  margin-right: 1rem;
+  font-size:5vw;
+}
+
+.gratis{
+  background-color: yellow;
+  font-family: 'Archivo', sans-serif;
+  font-size: 4vw;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  height: 4em;
+}
+
+.locaties{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.fas.fa-map{
+  float: left;
+  margin-right: 1rem;
+  font-size:5vw;
+}
+
+.rijlessen{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.fas.fa-graduation-cap{
+  float: left;
+  margin-right: 1rem;
+  font-size:5vw;
+}
+
+.locatiesclck{
+  color: blue;
+}
+
+.video{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+  @media only screen and (min-width: 600px){
+    html{
+      background-color: gray;
+    }
+
+    .fas.fa-bars{
+      display: none;
+    }
+
+    .fas.fa-bars.bottom{
+      display: none;
+    }
+
+    #top-block{
+      width: 100%;
+      background-color: yellow;
+      height: 2em;
+  }
+
+  .dropdown-content{
+    display: block;
+  }
+
+  .dropdown-content a{
+    float: right;
+    height: 1em;
+    padding: 4px 6px;
+  }
+
+  #logoimg{
+    width: 60%;
+    margin-right: 50px;
+  }  
 }
